@@ -1,5 +1,8 @@
 <?php
-$content = '<div class="row">
+  //fazer validação se usuário está conectado ou não (Entrar na Login ou na master)
+  $a = 0;
+  if ($a == 1) {
+    $content = '<div class="row">
                 <div class="col-xs-12">
                 <div class="box">
                   <div class="box-header">
@@ -37,8 +40,11 @@ $content = '<div class="row">
                 <!-- /.box -->
               </div>
             </div>';
+    include('../master.php');
+  } else {
+    require 'login.php';
+  }
 
-include('../master.php');
 ?>
 <!-- page script -->
 <script>
