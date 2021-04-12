@@ -1,5 +1,10 @@
 <?php
 session_start();
-if(!($_SESSION['ID'] >= 1)){
-    
+$_SESSION['ID'] = "abc";
+if(!(isset($_SESSION['ID']) && isset($_SESSION['email']) && $_SESSION['ID'] >= 1)){
+    echo "shit";
+    $_SESSION['ID'] = NULL;
+    $_SESSION['email'] = NULL;
+    session_destroy();
+    header("Location: login.php");
 }
