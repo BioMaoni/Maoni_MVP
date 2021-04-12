@@ -5,7 +5,8 @@
     if($id != 0){
     session_start();
     $_SESSION['ID'] = $id;
-    echo $_SESSION['id'];
+    $_SESSION['email'] = $_POST['email'];
+    echo $_SESSION['ID'];
     }
 else{
     session_destroy();
