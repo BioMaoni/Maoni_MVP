@@ -90,19 +90,17 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Teams</h6>
                         <a class="collapse-item" href="">Finance</a>
-                        <a class="collapse-item" href="">Tech</a>
                     </div>
                 </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-folder"></i>
-                    <span>Other Topics</span>
+                    <span>Other</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Meetings</h6>
-                        <a class="collapse-item" href="">Book Club</a>
                         <a class="collapse-item" href="">Onboarding</a>
                     </div>
                 </div>
