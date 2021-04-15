@@ -20,11 +20,11 @@
     <link rel="icon" type="image/x-icon" href="../img/ICOMAONI.ico" />
     <link href="../img/ICOMAONI.png" rel="apple-touch-icon">
     <!-- Custom fonts for this template-->
-    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../bootstrap/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="../css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="../bootstrap/css/sb-admin-2.min.css" rel="stylesheet">
 </head>
 
 <body class="bg-gradient-primary">
@@ -33,12 +33,12 @@
             <div class="user_card">
                 <div class="sidebar-brand d-flex align-items-center justify-content-center mb-4">
                     <div class="sidebar-brand-icon">
-                        <img src="../views/img/maoni_icon.png" style="height: 45px; width: 45px" alt="Logo">
+                        <img src="../bootstrap/img/maoni_icon.png" style="height: 45px; width: 45px" alt="Logo">
                     </div>
                     <div class="mx-3" style="color: #fff; font-size: 1rem; font-weight: 800;">MAONI</div>
                 </div>
                 <div class="d-flex justify-content-center form_container">
-                    <form action="../views/" method="post"> <!-- ../controller/loginStart.php -->
+                    <form action="../view/" method="post"> <!-- ../controller/loginStart.php -->
                         <div class="input-group mb-3">
                             <div class="input-group-append">
                                 <span class="input-group-text"><i class="fas fa-user"></i></span>

@@ -58,6 +58,7 @@ $content = '<div class="row">
               </div>';
 include('../master.php');
 ?>
+
 <script>
     //exemplo de create
     function AddDoctor() {

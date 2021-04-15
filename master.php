@@ -10,14 +10,14 @@
     <meta name="author" content="">
 
     <title>Maoni</title>
-    <link rel="icon" type="image/x-icon" href="../img/ICOMAONI.ico" />
-    <link href="../img/ICOMAONI.png" rel="apple-touch-icon">
+    <link rel="icon" type="image/x-icon" href="../bootstrap/img/ICOMAONI.ico" />
+    <link href="../bootstrap/img/ICOMAONI.png" rel="apple-touch-icon">
     <!-- Custom fonts for this template-->
-    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../bootstrap/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="../css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="../bootstrap/css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
@@ -30,9 +30,9 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../views/">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../view/">
                 <div class="sidebar-brand-icon">
-                    <img src="../img/logoMaoni.png" style="height: 45px; width: 45px" alt="Logo" />
+                    <img src="../bootstrap/img/logoMaoni.png" style="height: 45px; width: 45px" alt="Logo" />
                 </div>
                 <div class="sidebar-brand-text mx-3">MAONI</div>
             </a>
@@ -42,7 +42,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="../views/">
+                <a class="nav-link" href="../view/">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -236,7 +236,7 @@
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_1.svg" alt="">
+                                        <img class="rounded-circle" src="/bootstrap/img/undraw_profile_1.svg" alt="">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
                                     <div class="font-weight-bold">
@@ -247,7 +247,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="">
+                                        <img class="rounded-circle" src="/bootstrap/img/undraw_profile_2.svg" alt="">
                                         <div class="status-indicator"></div>
                                     </div>
                                     <div>
@@ -258,7 +258,7 @@
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="">
+                                        <img class="rounded-circle" src="/bootstrap/img/undraw_profile_3.svg" alt="">
                                         <div class="status-indicator bg-warning"></div>
                                     </div>
                                     <div>
@@ -288,7 +288,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">-- Nome Usuário --</span>
-                                <img class="img-profile rounded-circle" src="../img/undraw_profile.svg">
+                                <img class="img-profile rounded-circle" src="../bootstrap/img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -355,21 +355,21 @@
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                        <a class="btn btn-primary" href="../views/login.php">Logout</a>
+                        <a class="btn btn-primary" href="../view/login.php">Logout</a>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Bootstrap core JavaScript-->
-        <script src="../vendor/jquery/jquery.min.js"></script>
-        <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../bootstrap/vendor/jquery/jquery.min.js"></script>
+        <script src="../bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
         <!-- Core plugin JavaScript-->
-        <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+        <script src="../bootstrap/vendor/jquery-easing/jquery.easing.min.js"></script>
 
         <!-- Custom scripts for all pages-->
-        <script src="../js/sb-admin-2.min.js"></script>
+        <script src="../bootstrap/js/sb-admin-2.min.js"></script>
 
         <!-- Page level plugins --
             <script src="vendor/chart.js/Chart.min.js"></script>
@@ -377,8 +377,8 @@
             <!-- Page level custom scripts --
             <script src="js/demo/chart-area-demo.js"></script>
             <script src="js/demo/chart-pie-demo.js"></script>-->
-        <script type="text/javascript" src="../js/canvasjs.min.js"></script>
-        <script type="text/javascript" src="../js/fixx.js"></script>
+        <script type="text/javascript" src="../bootstrap/js/canvasjs.min.js"></script>
+        <script type="text/javascript" src="../bootstrap/js/fixx.js"></script>
 
 </body>
 
