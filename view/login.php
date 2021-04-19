@@ -38,18 +38,18 @@
                     <div class="mx-3" style="color: #fff; font-size: 1rem; font-weight: 800;">MAONI</div>
                 </div>
                 <div class="d-flex justify-content-center form_container">
-                    <form action="../view/" method="post"> <!-- ../controller/loginStart.php -->
+                    <form>
                         <div class="input-group mb-3">
                             <div class="input-group-append">
                                 <span class="input-group-text"><i class="fas fa-user"></i></span>
                             </div>
-                            <input name="email" type="email" name="" class="form-control input_user" value="" placeholder="username">
+                            <input name="email" type="email" name="" id="email" class="form-control input_user" value="" placeholder="email">
                         </div>
                         <div class="input-group mb-2">
                             <div class="input-group-append">
                                 <span class="input-group-text"><i class="fas fa-key"></i></span>
                             </div>
-                            <input name="password" type="password" name="" class="form-control input_pass" value="" placeholder="password">
+                            <input name="password" type="password" name="" id="password" class="form-control input_pass" value="" placeholder="password">
                         </div>
                         <div class="form-group">
                             <div class="custom-control custom-checkbox">
@@ -58,7 +58,7 @@
                             </div>
                         </div>
                         <div class="d-flex justify-content-center mt-3 login_container">
-                            <input type="submit" value="Login" style="color: #fff;" name="button" class="btn btn-lg btn-primary shadow-sm">
+                            <input type="submit" value="Login" style="color: #fff;" name="" onclick="Login()" class="btn btn-lg btn-primary shadow-sm">
                         </div>
                     </form>
                 </div>
@@ -74,6 +74,32 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function Login() {
+            $email=urlencode(('#email').val());
+            $.ajax({
+                type: "POST",
+                url: '../../Maoni_Api/controller/login.php',
+                dataType: 'json',
+                data: {
+                    email: $email,
+                    password: $("#password").val()
+                },
+                error: function(result) {
+                    alert(result.responseText);
+                },
+                success: function(result) {
+                    if (result['status'] == true) {
+                        alert("Successfully!");
+                        window.location.href = '/view/';
+                    } else {
+                        alert(result['message']);
+                    }
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
