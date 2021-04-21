@@ -3,10 +3,10 @@ class Database
 {
 
     // specify your own database credentials
-    private $host = "127.0.0.1:8888";
+    private $host = "localhost";
     private $db_name = "maoni";
-    private $username = "root";
-    private $password = "chXfS67s4kyT";
+    private $username = "maoniuser";
+    private $password = "maoniuser";
     public $conn;
 
     // get the database connection
