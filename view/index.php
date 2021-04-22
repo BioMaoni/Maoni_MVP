@@ -494,7 +494,125 @@ $content = '
                             </div>
                         </div>
                     </div>
-                    
+                    Customer, product & onboarding
+                    <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-warning shadow py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="h5 mb-0 text-warning font-weight-bold">Frequency of Appearances (%)
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mt-3 ">
+                                            <div class="chart-area"><div class="tableauPlaceholder" style="width: 1536px; height: 701px;"><object class="tableauViz" width="1536" height="701" style="display:none;"><param name="host_url" value="https%3A%2F%2Fprod-uk-a.online.tableau.com%2F" /> <param name="embed_code_version" value="3" /> <param name="site_root" value="&#47;t&#47;maonico" /><param name="name" value="Felipefrequency&#47;Sheet6" /><param name="tabs" value="no" /><param name="toolbar" value="yes" /><param name="showAppBanner" value="false" /></object></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-warning shadow py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="h5 mb-0 text-warning font-weight-bold">Sentiment MoM
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mt-3 "><div class="chart-area"><div class="tableauPlaceholder" style="width: 1536px; height: 701px;"><object class="tableauViz" width="1536" height="701" style="display:none;"><param name="host_url" value="https%3A%2F%2Fprod-uk-a.online.tableau.com%2F" /> <param name="embed_code_version" value="3" /> <param name="site_root" value="&#47;t&#47;maonico" /><param name="name" value="FelipeDB&#47;CustomerProductOnboarding" /><param name="tabs" value="no" /><param name="toolbar" value="yes" /><param name="showAppBanner" value="false" /></object></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-success shadow py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="h5 mb-0 text-success font-weight-bold">Number of Occurencies (#)</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mt-3 ">
+                                            <div class="chart-area"><div class="tableauPlaceholder" style="width: 1536px; height: 701px;"><object class="tableauViz" width="1536" height="701" style="display:none;"><param name="host_url" value="https%3A%2F%2Fprod-uk-a.online.tableau.com%2F" /> <param name="embed_code_version" value="3" /> <param name="site_root" value="&#47;t&#47;maonico" /><param name="name" value="FelipeCount&#47;Sheet5" /><param name="tabs" value="no" /><param name="toolbar" value="yes" /><param name="showAppBanner" value="false" /></object></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br/><br/>
+                    Scaling in europe                      
+                    <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-warning shadow py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="h5 mb-0 text-warning font-weight-bold">Frequency of Appearances (%)
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mt-3 "><div class="tableauPlaceholder" style="width: 1536px; height: 701px;"><object class="tableauViz" width="1536" height="701" style="display:none;"><param name="host_url" value="https%3A%2F%2Fprod-uk-a.online.tableau.com%2F" /> <param name="embed_code_version" value="3" /> <param name="site_root" value="&#47;t&#47;maonico" /><param name="name" value="Felipefrequency&#47;Sheet7" /><param name="tabs" value="no" /><param name="toolbar" value="yes" /><param name="showAppBanner" value="false" /></object></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-warning shadow py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="h5 mb-0 text-warning font-weight-bold">Sentiment MoM
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="row no-gutters align-items-center"><div class="tableauPlaceholder" style="width: 1536px; height: 701px;"><object class="tableauViz" width="1536" height="701" style="display:none;"><param name="host_url" value="https%3A%2F%2Fprod-uk-a.online.tableau.com%2F" /> <param name="embed_code_version" value="3" /> <param name="site_root" value="&#47;t&#47;maonico" /><param name="name" value="FelipeDB&#47;ScalinginEurope" /><param name="tabs" value="no" /><param name="toolbar" value="yes" /><param name="showAppBanner" value="false" /></object></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-success shadow py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="h5 mb-0 text-success font-weight-bold">Number of Occurencies (#)</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mt-3 ">
+                                            <div class="chart-area"><div class="tableauPlaceholder" style="width: 1536px; height: 701px;"><object class="tableauViz" width="1536" height="701" style="display:none;"><param name="host_url" value="https%3A%2F%2Fprod-uk-a.online.tableau.com%2F" /> <param name="embed_code_version" value="3" /> <param name="site_root" value="&#47;t&#47;maonico" /><param name="name" value="FelipeCount&#47;Sheet6" /><param name="tabs" value="no" /><param name="toolbar" value="yes" /><param name="showAppBanner" value="false" /></object></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>';
   include('../master.php');
 ?>
