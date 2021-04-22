@@ -8,16 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    
+
     <title>Maoni</title>
-    <link rel="icon" type="image/x-icon" href="../bootstrap/img/ICOMAONI.ico" />
-    <link href="../bootstrap/img/ICOMAONI.png" rel="apple-touch-icon">
+    <link rel="icon" type="image/x-icon" href="bootstrap/img/ICOMAONI.ico" />
+    <link href="bootstrap/img/ICOMAONI.png" rel="apple-touch-icon">
     <!-- Custom fonts for this template-->
-    <link href="../bootstrap/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="bootstrap/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <script type="text/javascript" src="https://prod-uk-a.online.tableau.com/javascripts/api/viz_v1.js"></script> 
+    <script type="text/javascript" src="https://prod-uk-a.online.tableau.com/javascripts/api/viz_v1.js"></script>
     <!-- Custom styles for this template-->
-    <link href="../bootstrap/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="bootstrap/css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
@@ -30,9 +30,9 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../view/">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="view/">
                 <div class="sidebar-brand-icon">
-                    <img src="../bootstrap/img/logoMaoni.png" style="height: 45px; width: 45px" alt="Logo" />
+                    <img src="bootstrap/img/logoMaoni.png" style="height: 45px; width: 45px" alt="Logo" />
                 </div>
                 <div class="sidebar-brand-text mx-3">MAONI</div>
             </a>
@@ -42,7 +42,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="../view/">
+                <a class="nav-link" href="view/">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -76,7 +76,7 @@
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Meetings</h6>
-                        <a class="collapse-item" href="">Weekly Shake</a>
+                        <a class="collapse-item" href="index.php?par=table01">Weekly Shake</a>
                     </div>
                 </div>
             </li>
@@ -89,7 +89,7 @@
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Teams</h6>
-                        <a class="collapse-item" href="">Finance</a>
+                        <a class="collapse-item" href="index.php?par=table02">Finance</a>
                     </div>
                 </div>
             </li>
@@ -288,7 +288,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">-- Nome Usuário --</span>
-                                <img class="img-profile rounded-circle" src="../bootstrap/img/undraw_profile.svg">
+                                <img class="img-profile rounded-circle" src="bootstrap/img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -322,13 +322,21 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">"-- Nome Reunião --"</h1>
+                        <!-- <h1 class="h3 mb-0 text-gray-800">"-- Nome Reunião --"</h1> -->
                         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                     </div>
 
-                    <!-- Content Row -->
-                    <?php echo $content; ?>
-
+                    <!-- Content Row (container fluid)-->
+                    <?php
+                    if (isset($_GET['par'])) {
+                        if ($_GET["par"] == "table01") {
+                            require_once "view/table01.php";
+                        } else if ($_GET["par"] == "table02") {
+                            require_once "view/table02.php";
+                        }
+                    } else { ?>
+                        Selecione uma reuniao
+                    <?php } ?>
 
                 </div>
 
@@ -355,21 +363,21 @@
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                        <a class="btn btn-primary" href="../view/login.php">Logout</a>
+                        <a class="btn btn-primary" href="view/login.php">Logout</a>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Bootstrap core JavaScript-->
-        <script src="../bootstrap/vendor/jquery/jquery.min.js"></script>
-        <script src="../bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="bootstrap/vendor/jquery/jquery.min.js"></script>
+        <script src="bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
         <!-- Core plugin JavaScript-->
-        <script src="../bootstrap/vendor/jquery-easing/jquery.easing.min.js"></script>
+        <script src="bootstrap/vendor/jquery-easing/jquery.easing.min.js"></script>
 
         <!-- Custom scripts for all pages-->
-        <script src="../bootstrap/js/sb-admin-2.min.js"></script>
+        <script src="bootstrap/js/sb-admin-2.min.js"></script>
 
         <!-- Page level plugins --
             <script src="vendor/chart.js/Chart.min.js"></script>
@@ -377,8 +385,8 @@
             <!-- Page level custom scripts --
             <script src="js/demo/chart-area-demo.js"></script>
             <script src="js/demo/chart-pie-demo.js"></script>-->
-        <script type="text/javascript" src="../bootstrap/js/canvasjs.min.js"></script>
-        <script type="text/javascript" src="../bootstrap/js/fixx.js"></script>
+        <script type="text/javascript" src="bootstrap/js/canvasjs.min.js"></script>
+        <script type="text/javascript" src="bootstrap/js/fixx.js"></script>
 
 </body>
 
