@@ -75,33 +75,10 @@
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Meetings</h6>
-                        <a class="collapse-item" href="index.php?par=WeeklyShake">Weekly Shake</a>
-                    </div>
-                </div>
-            </li>
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Functions</span>
-                </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Teams</h6>
-                        <a class="collapse-item" href="index.php?par=finance">Finance</a>
-                    </div>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Other</span>
-                </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Meetings</h6>
-                        <a class="collapse-item" href="index.php?par=onboarding">Onboarding</a>
+                        <h6 class="collapse-header">Weekly Shake</h6>
+                        <a class="collapse-item" href="index.php?par=sentiment">Sentiment Over Time</a>
+                        <a class="collapse-item" href="index.php?par=tagged">Tagged Topics</a>
+                        <a class="collapse-item" href="index.php?par=key">Key Topics</a>
                     </div>
                 </div>
             </li>
@@ -320,21 +297,21 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid ">
 
-                    <!-- Page Heading -->
+                    <!-- Page Heading 
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <!-- <h1 class="h3 mb-0 text-gray-800">"-- Nome Reunião --"</h1> -->
+                        <h1 class="h3 mb-0 text-gray-800">"-- Nome Reunião --"</h1>
                         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
-                    </div>
+                    </div> (Dá para deixar isso aqui ao invés de jogar código em todas as páginas) -->
 
                     <!-- Content Row (container fluid)-->
                     <?php
                     if (isset($_GET['par'])) {
-                        if ($_GET["par"] == "WeeklyShake") {
-                            require_once "view/weeklyShake.php";
-                        } else if ($_GET["par"] == "finance") {
-                            require_once "view/finance.php";
-                        } else if ($_GET["par"] == "onboarding") {
-                            require_once "view/onboarding.php";
+                        if ($_GET["par"] == "sentiment") {
+                            require_once "view/sentimentOverTime.php";
+                        } else if ($_GET["par"] == "tagged") {
+                            require_once "view/taggedTopics.php";
+                        } else if ($_GET["par"] == "key") {
+                            require_once "view/keyTopics.php";
                         }
                     } else { ?>
                         Selecione uma reuniao
