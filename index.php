@@ -30,7 +30,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="view/">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="" onclick="header()">
                 <div class="sidebar-brand-icon">
                     <img src="bootstrap/img/logoMaoni.png" style="height: 45px; width: 45px" alt="Logo" />
                 </div>
@@ -42,7 +42,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="view/">
+                <a class="nav-link" href="" onclick="header()">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -76,7 +76,7 @@
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Meetings</h6>
-                        <a class="collapse-item" href="index.php?par=table01">Weekly Shake</a>
+                        <a class="collapse-item" href="index.php?par=WeeklyShake">Weekly Shake</a>
                     </div>
                 </div>
             </li>
@@ -89,7 +89,7 @@
                 <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Teams</h6>
-                        <a class="collapse-item" href="index.php?par=table02">Finance</a>
+                        <a class="collapse-item" href="index.php?par=finance">Finance</a>
                     </div>
                 </div>
             </li>
@@ -101,7 +101,7 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Meetings</h6>
-                        <a class="collapse-item" href="">Onboarding</a>
+                        <a class="collapse-item" href="index.php?par=onboarding">Onboarding</a>
                     </div>
                 </div>
             </li>
@@ -329,10 +329,12 @@
                     <!-- Content Row (container fluid)-->
                     <?php
                     if (isset($_GET['par'])) {
-                        if ($_GET["par"] == "table01") {
-                            require_once "view/table01.php";
-                        } else if ($_GET["par"] == "table02") {
-                            require_once "view/table02.php";
+                        if ($_GET["par"] == "WeeklyShake") {
+                            require_once "view/weeklyShake.php";
+                        } else if ($_GET["par"] == "finance") {
+                            require_once "view/finance.php";
+                        } else if ($_GET["par"] == "onboarding") {
+                            require_once "view/onboarding.php";
                         }
                     } else { ?>
                         Selecione uma reuniao
