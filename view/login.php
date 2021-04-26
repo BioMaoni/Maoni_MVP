@@ -38,7 +38,7 @@
                     <div class="mx-3" style="color: #fff; font-size: 1rem; font-weight: 800;">MAONI</div>
                 </div>
                 <div class="d-flex justify-content-center form_container">
-                    <form>
+                    <form action="../controller/loginStart.php" method="post">
                         <div class="input-group mb-3">
                             <div class="input-group-append">
                                 <span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -58,14 +58,14 @@
                             </div>
                         </div>
                         <div class="d-flex justify-content-center mt-3 login_container">
-                            <input type="submit" value="Login" style="color: #fff;" name="" onclick="Login()" class="btn btn-lg btn-primary shadow-sm">
+                            <input type="submit" value="Login" style="color: #fff;" name="" class="btn btn-lg btn-primary shadow-sm">
                         </div>
                     </form>
                 </div>
 
                 <div>
                     <div class="d-flex justify-content-center links" style="color: #fff;">
-                        Don't have an account? <a style="color: #0E1B51;" href="#" class="ml-2">Sign Up</a>
+                        Don't have an account? <a style="color: #0E1B51;" href="signup.php" class="ml-2">Sign Up</a>
                     </div>
                     <div class="d-flex justify-content-center links">
                         <a style="color: #0E1B51;" href="#">Forgot your password?</a>
@@ -74,32 +74,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        function Login() {
-            $email=urlencode(('#email').val());
-            $.ajax({
-                type: "POST",
-                url: '../../Maoni_Api/controller/login.php',
-                dataType: 'json',
-                data: {
-                    email: $email,
-                    password: $("#password").val()
-                },
-                error: function(result) {
-                    alert(result.responseText);
-                },
-                success: function(result) {
-                    if (result['status'] == true) {
-                        alert("Successfully!");
-                        window.location.href = '/view/';
-                    } else {
-                        alert(result['message']);
-                    }
-                }
-            });
-        }
-    </script>
 </body>
 
 </html>

@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+require_once "controller/loggedIn.php";
+?>
 <html lang="en">
 
 <head>
@@ -282,7 +285,7 @@
                                     Activity Log
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <a onclick="logout()" class="dropdown-item" data-toggle="modal" >
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>
@@ -342,7 +345,7 @@
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                        <a class="btn btn-primary" href="view/login.php">Logout</a>
+                        <a class="btn btn-primary" href="controller/logout.php">Logout</a>
                     </div>
                 </div>
             </div>
@@ -366,6 +369,11 @@
             <script src="js/demo/chart-pie-demo.js"></script>-->
         <script type="text/javascript" src="bootstrap/js/canvasjs.min.js"></script>
         <script type="text/javascript" src="bootstrap/js/fixx.js"></script>
+        <script>
+            function logout(){
+                window.location.href = "controller/logout.php";
+            }
+        </script>
 
 </body>
 
