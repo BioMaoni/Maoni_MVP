@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-require_once "controller/countryDB.class.php";
+require_once "../controller/countryDB.class.php";
 ?>
 <html lang="en">
 
@@ -67,7 +67,7 @@ require_once "controller/countryDB.class.php";
 
         <!-- Registeration Form -->
         <div class="col-md-7 col-lg-6 ml-auto">
-            <form action="CreateAccount.php" method="post">
+            <form action="../controller/CreateAccount.php" method="post">
                 <div class="row">
 
                     <!-- First Name -->
@@ -150,7 +150,7 @@ require_once "controller/countryDB.class.php";
 
                     <!-- Already Registered -->
                     <div class="text-center w-100">
-                        <p class="text-muted font-weight-bold">Already Registered? <a href="login.html" class="text-primary ml-2">Login</a></p>
+                        <p class="text-muted font-weight-bold">Already Registered? <a href="login.php" class="text-primary ml-2">Login</a></p>
                     </div>
 
                 </div>
