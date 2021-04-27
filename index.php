@@ -117,9 +117,9 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.php?par=dashboard" onclick="header()">
+                <a class="nav-link" href="index.php?par=trending" onclick="">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
+                    <span>Trending Topics</span></a>
             </li>
 
             <!-- Divider -->
@@ -150,9 +150,9 @@
                 </a>
                 <div id="cross_topics" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="collapse-inner" style="padding: 0rem;">
-                        <h1 class="collapse-header" style="padding: 0rem; font-size: .65rem; color: white;">Weekly Shake</h1>
-                        <a class="nav-link w-100 h-100" style="padding: .5rem 1rem;" href="">Historical Sentiment</a>
-                        <a class="nav-link w-100 h-100" style="padding: .5rem 1rem;" href="">Teams - Sentiment</a>
+                        <h1 class="collapse-header" style="padding: .5rem 0rem; font-size: .65rem; color: white;">Weekly Shake</h1>
+                        <a class="nav-link w-100 h-100" style="padding: .5rem 1rem;" href="index.php?par=historical">Historical Sentiment</a>
+                        <a class="nav-link w-100 h-100" style="padding: .5rem 1rem;" href="index.php?par=teams">Teams - Sentiment</a>
                         <!-- estudar data-parent -->
                         <a class="nav-link collapsed w-100 h-100" style="padding: .5rem 1rem;" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
                             <i class="fas fa-fw fa-folder"></i>
@@ -160,12 +160,11 @@
                         </a>
                         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#cross_topics">
                             <div class="bg-white collapse-inner rounded" style="padding: 0rem;">
-                                <h3 class="collapse-header">Sentiment</h3>
-                                <a class="collapse-item" href="index.php?par=sentiment">People</a>
-                                <a class="collapse-item" href="index.php?par=tagged">Onboarding</a>
-                                <a class="collapse-item" href="index.php?par=key">Scalling</a>
-                                <a class="collapse-item" href="index.php?par=key">Technology</a>
-                                <a class="collapse-item" href="index.php?par=key">Operations</a>
+                                <a class="collapse-item" href="index.php?par=people">People</a>
+                                <a class="collapse-item" href="index.php?par=onboarding">Onboarding</a>
+                                <a class="collapse-item" href="index.php?par=scalling">Scalling</a>
+                                <a class="collapse-item" href="index.php?par=technology">Technology</a>
+                                <a class="collapse-item" href="index.php?par=operations">Operations</a>
                             </div>
                         </div>
                         <a class="nav-link collapsed w-100 h-100" style="padding: .5rem 1rem;" href="#" data-toggle="collapse" data-target="#collapsePagess" aria-expanded="true" aria-controls="collapsePages">
@@ -175,10 +174,9 @@
                         <!-- data-parent="#accordionSidebar" -->
                         <div id="collapsePagess" class="collapse" aria-labelledby="headingPages" data-parent="#cross_topics">
                             <div class="bg-white collapse-inner rounded" style="padding: 0rem;">
-                                <h3 class="collapse-header">Sentiment</h3>
-                                <a class="collapse-item" href="index.php?par=sentiment">Global Goals</a>
-                                <a class="collapse-item" href="index.php?par=tagged">Countries</a>
-                                <a class="collapse-item" href="index.php?par=key">Product Offering</a>
+                                <a class="collapse-item" href="index.php?par=global">Global Goals</a>
+                                <a class="collapse-item" href="index.php?par=countries">Countries</a>
+                                <a class="collapse-item" href="index.php?par=product">Product Offering</a>
                             </div>
                         </div>
                     </div>
@@ -192,9 +190,16 @@
             </div>
 
             <li class="nav-item">
-                <a class="nav-link" style="padding: .5rem 1rem;" href="#">
+                <a class="nav-link" style="padding: .5rem 1rem;" href="index.php?par=remote">
                     <i class="fas fa-fw fa-folder"></i>
                     <span>Remote Work Playbook</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" style="padding: .5rem 1rem;" href="index.php?par=our">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Our Methodology</span>
                 </a>
             </li>
 
@@ -419,14 +424,37 @@
                     </div> (Dá para deixar isso aqui ao invés de jogar código em todas as páginas) -->
 
                     <!-- Content Row (container fluid)-->
+                    <!-- Código feio este abaixo... Arrumar pois não é para carregar uma nova página toda vez que o usuário
+                        seleciona uma aba... uma visão de gráfico! Ou seja, já tem que estar carregado e que ele navegue
+                        de maneira fluída-->
                     <?php
                     if (isset($_GET['par'])) {
-                        if ($_GET["par"] == "sentiment") {
-                            require_once "view/sentimentOverTime.php";
-                        } else if ($_GET["par"] == "tagged") {
-                            require_once "view/taggedTopics.php";
-                        } else if ($_GET["par"] == "key") {
-                            require_once "view/keyTopics.php";
+                        if ($_GET["par"] == "historical") {
+                            require_once "view/historicalSentiment.php";
+                        } else if ($_GET["par"] == "teams") {
+                            require_once "view/teams.php";
+                        } else if ($_GET["par"] == "people") {
+                            require_once "view/people.php";
+                        } else if ($_GET["par"] == "onboarding") {
+                            require_once "view/onboarding.php";
+                        } else if ($_GET["par"] == "scalling") {
+                            require_once "view/scalling.php";
+                        } else if ($_GET["par"] == "technology") {
+                            require_once "view/technology.php";
+                        } else if ($_GET["par"] == "operations") {
+                            require_once "view/operations.php";
+                        } else if ($_GET["par"] == "global") {
+                            require_once "view/globalGoals.php";
+                        } else if ($_GET["par"] == "countries") {
+                            require_once "view/countries.php";
+                        } else if ($_GET["par"] == "product") {
+                            require_once "view/productOffering.php";
+                        }else if ($_GET["par"] == "remote") {
+                            require_once "view/remotePlaybook.php";
+                        } else if ($_GET["par"] == "our") {
+                            require_once "view/ourMethodology.php";
+                        } else {
+                            require_once "view/trendingTopics.php";
                         }
                     } else { ?>
                         Selecione uma reuniao
@@ -475,8 +503,7 @@
 
         <!-- Page level plugins --
             <script src="vendor/chart.js/Chart.min.js"></script>
-
-            <!-- Page level custom scripts --
+             Page level custom scripts --
             <script src="js/demo/chart-area-demo.js"></script>
             <script src="js/demo/chart-pie-demo.js"></script>-->
         <script type="text/javascript" src="bootstrap/js/canvasjs.min.js"></script>
