@@ -38,7 +38,7 @@
                     <div class="mx-3" style="color: #fff; font-size: 1rem; font-weight: 800;">MAONI</div>
                 </div>
                 <div class="d-flex justify-content-center form_container">
-                    <form action="../controller/loginStart.php" method="post">
+                    <form action="../Maoni_Api/controller/user/login_user.php" method="post">
                         <div class="input-group mb-3">
                             <div class="input-group-append">
                                 <span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -65,7 +65,7 @@
 
                 <div>
                     <div class="d-flex justify-content-center links" style="color: #fff;">
-                        Don't have an account? <a style="color: #0E1B51;" href="signup.php" class="ml-2">Sign Up</a>
+                        Don't have an account? <a style="color: #0E1B51;" href="login.php" class="ml-2">Sign Up</a>
                     </div>
                     <div class="d-flex justify-content-center links">
                         <a style="color: #0E1B51;" href="#">Forgot your password?</a>

@@ -13,16 +13,16 @@ $user = new User($db);
 
 // set ID property of user to be edited
 // mudando validação..
-$user->email = isset($_GET['email']) ? $_GET['email'] : die();
-$user->password = base64_encode(isset($_GET['password']) ? $_GET['password'] : die());
+
+//$user->email = isset($_GET['email']) ? $_GET['email'] : die();
+$user->email = $_POST['email'];
+//$user->password = base64_encode(isset($_GET['password']) ? $_GET['password'] : die());
+$user->password = base64_encode($_POST['password']);
 
 // read the details of user to be edited
 $stmt = $user->login();
 
-//$id = $a->login($_POST['email'], $_POST['password']);
-
 if ($stmt->rowCount() > 0) {
-
     // get retrieved row
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
@@ -38,16 +38,18 @@ if ($stmt->rowCount() > 0) {
     $_SESSION['ID'] = $user_arr['id'];
     $_SESSION['name'] = $user_arr['name'];
     echo $_SESSION['ID'];
-    header("Location: ../index.php"); 
+    header("Location: ../../../index.php"); 
 
 } else {
+    var_dump('fudeu');
     $user_arr = array(
         "status" => false,
         "message" => "Invalid Username or Password!",
     );
     session_destroy();
-    header("Location: ../view/login.php");
+    header("Location: ../../../view/login.php");
 }
 
 // make it json format
-print_r(json_encode($user_arr));
+//print_r(json_encode($user_arr));
+

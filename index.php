@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-require_once "controller/loggedIn.php";
+require_once "controller/user/loggedIn.php";
 ?>
 <html lang="en">
 
@@ -205,7 +205,7 @@ require_once "controller/loggedIn.php";
                     <span>Our Methodology</span>
                 </a>
             </li>
-            
+
             <li class="nav-item">
                 <a class="nav-link" style="padding: .5rem 1rem;" href="index.php?par=remote">
                     <i class="fas fa-fw fa-folder"></i>
@@ -395,7 +395,9 @@ require_once "controller/loggedIn.php";
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">-- Nome Usuário --</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">
+                                <?php $_SESSION['name']?>
+                                </span>
                                 <img class="img-profile rounded-circle" src="bootstrap/img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
@@ -413,7 +415,7 @@ require_once "controller/loggedIn.php";
                                     Activity Log
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a onclick="logout()" class="dropdown-item" data-toggle="modal" >
+                                <a onclick="logout()" class="dropdown-item" data-toggle="modal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>
@@ -469,9 +471,9 @@ require_once "controller/loggedIn.php";
                         } else {
                             require_once "view/trendingTopics.php";
                         }
-                    } else { ?>
+                    } else {
                         require_once "view/trendingTopics.php";
-                    <?php } ?>
+                    } ?>
 
                 </div>
 
@@ -522,8 +524,8 @@ require_once "controller/loggedIn.php";
         <script type="text/javascript" src="bootstrap/js/canvasjs.min.js"></script>
         <script type="text/javascript" src="bootstrap/js/fixx.js"></script>
         <script>
-            function logout(){
-                window.location.href = "controller/logout.php";
+            function logout() {
+                window.location.href = "controller/user/logout.php";
             }
         </script>
 
