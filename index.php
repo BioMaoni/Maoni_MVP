@@ -119,7 +119,7 @@
             <li class="nav-item active">
                 <a class="nav-link" href="index.php?par=trending" onclick="">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Trending Topics</span></a>
+                    <span>Trending Keywords</span></a>
             </li>
 
             <!-- Divider -->
@@ -161,9 +161,9 @@
                         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#cross_topics">
                             <div class="bg-white collapse-inner rounded" style="padding: 0rem;">
                                 <a class="collapse-item" href="index.php?par=people">People</a>
-                                <a class="collapse-item" href="index.php?par=onboarding">Onboarding</a>
-                                <a class="collapse-item" href="index.php?par=scalling">Scalling</a>
                                 <a class="collapse-item" href="index.php?par=technology">Technology</a>
+                                <a class="collapse-item" href="index.php?par=onboarding">Onboarding</a>
+                                <a class="collapse-item" href="index.php?par=scaling">Scaling</a>
                                 <a class="collapse-item" href="index.php?par=operations">Operations</a>
                             </div>
                         </div>
@@ -174,8 +174,8 @@
                         <!-- data-parent="#accordionSidebar" -->
                         <div id="collapsePagess" class="collapse" aria-labelledby="headingPages" data-parent="#cross_topics">
                             <div class="bg-white collapse-inner rounded" style="padding: 0rem;">
-                                <a class="collapse-item" href="index.php?par=global">Global Goals</a>
                                 <a class="collapse-item" href="index.php?par=countries">Countries</a>
+                                <a class="collapse-item" href="index.php?par=global">Global Goals</a>
                                 <a class="collapse-item" href="index.php?par=product">Product Offering</a>
                             </div>
                         </div>
@@ -190,9 +190,9 @@
             </div>
 
             <li class="nav-item">
-                <a class="nav-link" style="padding: .5rem 1rem;" href="index.php?par=remote">
+                <a class="nav-link" style="padding: .5rem 1rem;" href="index.php?par=insights">
                     <i class="fas fa-fw fa-folder"></i>
-                    <span>Remote Work Playbook</span>
+                    <span>Insights</span>
                 </a>
             </li>
 
@@ -202,6 +202,14 @@
                     <span>Our Methodology</span>
                 </a>
             </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" style="padding: .5rem 1rem;" href="index.php?par=remote">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Remote Work Playbook</span>
+                </a>
+            </li>
+
 
             <!-- Nav Item - Pages Collapse Menu -->
 
@@ -437,8 +445,8 @@
                             require_once "view/people.php";
                         } else if ($_GET["par"] == "onboarding") {
                             require_once "view/onboarding.php";
-                        } else if ($_GET["par"] == "scalling") {
-                            require_once "view/scalling.php";
+                        } else if ($_GET["par"] == "scaling") {
+                            require_once "view/scaling.php";
                         } else if ($_GET["par"] == "technology") {
                             require_once "view/technology.php";
                         } else if ($_GET["par"] == "operations") {
@@ -449,15 +457,17 @@
                             require_once "view/countries.php";
                         } else if ($_GET["par"] == "product") {
                             require_once "view/productOffering.php";
-                        }else if ($_GET["par"] == "remote") {
+                        } else if ($_GET["par"] == "remote") {
                             require_once "view/remotePlaybook.php";
                         } else if ($_GET["par"] == "our") {
                             require_once "view/ourMethodology.php";
+                        } else if ($_GET["par"] == "insights") {
+                            require_once "view/insights.php";
                         } else {
                             require_once "view/trendingTopics.php";
                         }
                     } else { ?>
-                        Selecione uma reuniao
+                        require_once "view/trendingTopics.php";
                     <?php } ?>
 
                 </div>

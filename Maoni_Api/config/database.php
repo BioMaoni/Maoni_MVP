@@ -5,8 +5,8 @@ class Database
     // specify your own database credentials
     private $host = "localhost";
     private $db_name = "maoni";
-    private $username = "maoniuser";
-    private $password = "maoniuser";
+    private $username = "root"; //maoniuser
+    private $password = ""; //maoniuser
     public $conn;
 
     // get the database connection

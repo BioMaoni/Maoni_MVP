@@ -9,7 +9,7 @@
     <h5 class="font-weight-bold">Tagged Topics?</h5>
     <h6 class=""><p></p></h6>
     <br>
-    <h5 class="font-weight-bold">Trending Topics?</h5>
+    <h5 class="font-weight-bold">Trending Keywords?</h5>
     <h6 class=""><p></p></h6>
     <br>
     <h5 class="font-weight-bold">What is Sentiment Analysis?</h5>

@@ -19,6 +19,8 @@ $user->password = base64_encode(isset($_GET['password']) ? $_GET['password'] : d
 // read the details of user to be edited
 $stmt = $user->login();
 
+//$id = $a->login($_POST['email'], $_POST['password']);
+
 if ($stmt->rowCount() > 0) {
 
     // get retrieved row
@@ -31,11 +33,20 @@ if ($stmt->rowCount() > 0) {
         "id" => $row['ID'],
         "name" => $row['name']
     );
+
+    session_start();
+    $_SESSION['ID'] = $user_arr['id'];
+    $_SESSION['name'] = $user_arr['name'];
+    echo $_SESSION['ID'];
+    header("Location: ../index.php"); 
+
 } else {
     $user_arr = array(
         "status" => false,
         "message" => "Invalid Username or Password!",
     );
+    session_destroy();
+    header("Location: ../view/login.php");
 }
 
 // make it json format

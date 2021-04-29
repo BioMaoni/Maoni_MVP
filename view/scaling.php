@@ -1,11 +1,12 @@
 <div class="container-fluid ">
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Countries</h1>
+        <h1 class="h3 mb-0 text-gray-800">Salt, Scale and Market</h1>
         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
     </div>
 
     <div class="row">
+
         <div class="col-sm col-md col-xl-6 mb-4">
             <div class="card border-left-warning shadow py-2">
                 <div class="card-body">
@@ -22,14 +23,14 @@
                     <div class="row no-gutters align-items-center">
                         <div class="col mt-3 ">
                             <div class="chart-area">
-                                <div class='tableauPlaceholder' id='viz1619715063214' style='position: relative'><noscript><a href='#'><img alt='Sheet 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fe&#47;FelipeFrequency&#47;Sheet2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz w-100 h-100' style='display:none;'>
+                                <div class='tableauPlaceholder' id='viz1619713772492' style='position: relative'><noscript><a href='#'><img alt='Sheet 7 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fe&#47;FelipeFrequency&#47;Sheet7&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz w-100 h-100' style='display:none;'>
                                         <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
                                         <param name='embed_code_version' value='3' />
                                         <param name='site_root' value='' />
-                                        <param name='name' value='FelipeFrequency&#47;Sheet2' />
+                                        <param name='name' value='FelipeFrequency&#47;Sheet7' />
                                         <param name='tabs' value='no' />
                                         <param name='toolbar' value='yes' />
-                                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fe&#47;FelipeFrequency&#47;Sheet2&#47;1.png' />
+                                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fe&#47;FelipeFrequency&#47;Sheet7&#47;1.png' />
                                         <param name='animate_transition' value='yes' />
                                         <param name='display_static_image' value='yes' />
                                         <param name='display_spinner' value='yes' />
@@ -38,7 +39,7 @@
                                         <param name='language' value='en' />
                                     </object></div>
                                 <script type='text/javascript'>
-                                    var divElement = document.getElementById('viz1619715063214');
+                                    var divElement = document.getElementById('viz1619713772492');
                                     var vizElement = divElement.getElementsByTagName('object')[0];
                                     vizElement.style.width = '100%';
                                     vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
@@ -68,14 +69,14 @@
                     <div class="row no-gutters align-items-center">
                         <div class="col mt-3 ">
                             <div class="chart-area">
-                                <div class='tableauPlaceholder' id='viz1619715085224' style='position: relative'><noscript><a href='#'><img alt='Sheet 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fe&#47;FelipeCount&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz w-100 h-100' style='display:none;'>
+                                <div class='tableauPlaceholder' id='viz1619713811371' style='position: relative'><noscript><a href='#'><img alt='Sheet 6 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fe&#47;FelipeCount&#47;Sheet6&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz w-100 h-100' style='display:none;'>
                                         <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
                                         <param name='embed_code_version' value='3' />
                                         <param name='site_root' value='' />
-                                        <param name='name' value='FelipeCount&#47;Sheet1' />
+                                        <param name='name' value='FelipeCount&#47;Sheet6' />
                                         <param name='tabs' value='no' />
                                         <param name='toolbar' value='yes' />
-                                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fe&#47;FelipeCount&#47;Sheet1&#47;1.png' />
+                                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fe&#47;FelipeCount&#47;Sheet6&#47;1.png' />
                                         <param name='animate_transition' value='yes' />
                                         <param name='display_static_image' value='yes' />
                                         <param name='display_spinner' value='yes' />
@@ -84,7 +85,7 @@
                                         <param name='language' value='en' />
                                     </object></div>
                                 <script type='text/javascript'>
-                                    var divElement = document.getElementById('viz1619715085224');
+                                    var divElement = document.getElementById('viz1619713811371');
                                     var vizElement = divElement.getElementsByTagName('object')[0];
                                     vizElement.style.width = '100%';
                                     vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
@@ -94,9 +95,7 @@
                                 </script>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </div>
@@ -109,14 +108,14 @@
                 </div>
                 <div class="card-body">
                     <div class="chart-area">
-                        <div class='tableauPlaceholder' id='viz1619715129852' style='position: relative'><noscript><a href='#'><img alt='Sheet 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fe&#47;FelipeDB&#47;Sheet2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz w-100 h-100' style='display:none;'>
+                        <div class='tableauPlaceholder' id='viz1619713846500' style='position: relative'><noscript><a href='#'><img alt='Sheet 7 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fe&#47;FelipeDB&#47;Sheet7&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz w-100 h-100' style='display:none;'>
                                 <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
                                 <param name='embed_code_version' value='3' />
                                 <param name='site_root' value='' />
-                                <param name='name' value='FelipeDB&#47;Sheet2' />
+                                <param name='name' value='FelipeDB&#47;Sheet7' />
                                 <param name='tabs' value='no' />
                                 <param name='toolbar' value='yes' />
-                                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fe&#47;FelipeDB&#47;Sheet2&#47;1.png' />
+                                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fe&#47;FelipeDB&#47;Sheet7&#47;1.png' />
                                 <param name='animate_transition' value='yes' />
                                 <param name='display_static_image' value='yes' />
                                 <param name='display_spinner' value='yes' />
@@ -125,7 +124,7 @@
                                 <param name='language' value='en' />
                             </object></div>
                         <script type='text/javascript'>
-                            var divElement = document.getElementById('viz1619715129852');
+                            var divElement = document.getElementById('viz1619713846500');
                             var vizElement = divElement.getElementsByTagName('object')[0];
                             vizElement.style.width = '100%';
                             vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
@@ -134,7 +133,6 @@
                             vizElement.parentNode.insertBefore(scriptElement, vizElement);
                         </script>
                     </div>
-
                 </div>
             </div>
         </div>
