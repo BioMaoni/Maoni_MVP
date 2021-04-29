@@ -395,8 +395,8 @@ require_once "controller/user/loggedIn.php";
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">
-                                <?php $_SESSION['name']?>
+                                <span class="mr-4 d-none d-lg-inline text-gray-600 small">
+                                <?php echo $_SESSION['name']; ?>
                                 </span>
                                 <img class="img-profile rounded-circle" src="bootstrap/img/undraw_profile.svg">
                             </a>
@@ -500,7 +500,7 @@ require_once "controller/user/loggedIn.php";
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                        <a class="btn btn-primary" href="controller/logout.php">Logout</a>
+                        <a class="btn btn-primary" href="controller/user/logout.php">Logout</a>
                     </div>
                 </div>
             </div>
