@@ -206,12 +206,14 @@ require_once "controller/user/loggedIn.php";
                 </a>
             </li>
 
+            <!--
             <li class="nav-item">
                 <a class="nav-link" style="padding: .5rem 1rem;" href="index.php?par=remote">
                     <i class="fas fa-fw fa-folder"></i>
                     <span>Remote Work Playbook</span>
                 </a>
             </li>
+            -->
 
 
             <!-- Nav Item - Pages Collapse Menu -->
