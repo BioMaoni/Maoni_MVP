@@ -33,7 +33,6 @@ if ($stmt->rowCount() > 0) {
         "id" => $row['ID'],
         "name" => $row['name']
     );
-
     session_start();
     $_SESSION['ID'] = $user_arr['id'];
     $_SESSION['name'] = $user_arr['name'];
@@ -41,7 +40,6 @@ if ($stmt->rowCount() > 0) {
     header("Location: ../../../index.php"); 
 
 } else {
-    var_dump('fudeu');
     $user_arr = array(
         "status" => false,
         "message" => "Invalid Username or Password!",
