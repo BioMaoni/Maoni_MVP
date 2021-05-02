@@ -11,6 +11,11 @@ require_once "controller/user/loggedIn.php";
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />F
 
     <title>Maoni</title>
     <link rel="icon" type="image/x-icon" href="bootstrap/img/ICOMAONI.ico" />
@@ -398,7 +403,7 @@ require_once "controller/user/loggedIn.php";
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-4 d-none d-lg-inline text-gray-600 small">
-                                <?php echo $_SESSION['name']; ?>
+                                    <?php echo $_SESSION['name']; ?>
                                 </span>
                                 <img class="img-profile rounded-circle" src="bootstrap/img/undraw_profile.svg">
                             </a>

@@ -1,15 +1,15 @@
 <div>
     <h5 class="font-weight-bold">What is Topic Modeling?</h5>
-    <h6 class=""><p>Topic modelling is an algorithm that applies an iterative process to identify the relationships between semantic structures in a text body and break them down into topics.</p>
+    <h6 class=""><p>Topic Modelling is an algorithm that applies an iterative process to identify the relationships between semantic structures in a text body and break them down into topics.</p>
     </h6>
     <br>
-    <h5 class="font-weight-bold">Key Topics?</h5>
+    <h5 class="font-weight-bold">What is a Key Topics?</h5>
     <h6 class=""><p>The topics filtered by our algorithm are referenced as key topics in our interface.</p></h6>
     <br>
-    <h5 class="font-weight-bold">Tagged Topics?</h5>
+    <h5 class="font-weight-bold">What is a Tagged Topics?</h5>
     <h6 class=""><p>These are the words that you, the user, will specifically tell our code to look for in the meetings. Tagging words allows you to analyze sentiment, subjectivity, frequency and a lot more information -- just like the code already does with the words from key topics.</p></h6>
     <br>
-    <h5 class="font-weight-bold">Trending Keywords?</h5>
+    <h5 class="font-weight-bold">What are Trending Keywords?</h5>
     <h6 class=""><p>These are the most recurrent words mentioned in your meetings, and are determined using their number of occurrences in the meetings from any specified period.</p></h6>
     <br>
     <h5 class="font-weight-bold">What is Sentiment Analysis?</h5>
