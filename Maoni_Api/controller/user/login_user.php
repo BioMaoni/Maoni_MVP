@@ -37,7 +37,7 @@ if ($stmt->rowCount() > 0) {
     $_SESSION['ID'] = $user_arr['id'];
     $_SESSION['name'] = $user_arr['name'];
     echo $_SESSION['ID'];
-    header("Location: ../../../index.php"); 
+    header("Location: ../../../view/portal.php"); 
 
 } else {
     $user_arr = array(
