@@ -102,6 +102,18 @@ require_once "controller/user/loggedIn.php";
         })(window, document, window['_fs_namespace'], 'script', 'user');
     </script>
 
+    <script type="text/javascript">
+        window.$crisp = [];
+        window.CRISP_WEBSITE_ID = "76c81c64-1d40-472f-b62d-520c9f9806fc";
+        (function() {
+            d = document;
+            s = d.createElement("script");
+            s.src = "https://client.crisp.chat/l.js";
+            s.async = 1;
+            d.getElementsByTagName("head")[0].appendChild(s);
+        })();
+    </script>
+
 </head>
 
 <body id="page-top">
@@ -113,7 +125,7 @@ require_once "controller/user/loggedIn.php";
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="" onclick="header()">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php?par=trending" onclick="header()">
                 <div class="sidebar-brand-icon">
                     <img src="bootstrap/img/logoMaoni.png" style="height: 45px; width: 45px" alt="Logo" />
                 </div>
