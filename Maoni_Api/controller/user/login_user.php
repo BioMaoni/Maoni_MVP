@@ -1,5 +1,4 @@
 <?php
-
 // include database and object files
 include_once '../../config/database.php';
 include_once '../../objects/user.php';
@@ -36,9 +35,7 @@ if ($stmt->rowCount() > 0) {
     session_start();
     $_SESSION['ID'] = $user_arr['id'];
     $_SESSION['name'] = $user_arr['name'];
-    echo $_SESSION['ID'];
-    header("Location: ../../../view/portal.php"); 
-
+    header("Location: ../../../view/portal.php");
 } else {
     $user_arr = array(
         "status" => false,
@@ -50,4 +47,3 @@ if ($stmt->rowCount() > 0) {
 
 // make it json format
 //print_r(json_encode($user_arr));
-

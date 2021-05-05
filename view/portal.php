@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-require_once "../controller/user/loggedIn.php";
+require_once '../controller/user/loggedIn.php';
 ?>
 <html lang="en">
 

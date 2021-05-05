@@ -11186,7 +11186,6 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#What">What We Are Not</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#product">Product</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#pricing">Pricing</a></li>
-                    <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>-->
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#getStarted">Get Started</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="view/login.php">Login</a></li>
                 </ul>
@@ -11198,19 +11197,21 @@
         <div class="container h-100">
             <div class="row h-100 align-items-center justify-content-center text-center">
                 <div class="col-lg-10 align-self-end">
-                    <h2 class="text-uppercase text-white font-weight-bold">MAONI IS AN AUTOMATED WORK MANAGEMENT
-                        PLATFORM THAT HELPS COMPANIES WITH MULTIPLE REMOTE WORK SETTINGS TO MONITOR WHAT AND HOW TEAMS
-                        ARE WORKING</h2>
+                    <h2 class="text-uppercase text-white font-weight-bold">MAONI IS A FULLY AUTOMATED (NO MANUAL TASKS) WORK MANAGEMENT PLATFORM THAT HELPS TEAMS TO ANSWER TWO FUNDAMENTAL QUESTIONS: WHAT IS HAPPENING (KEY TOPICS) ACROSS THE ORGANIZATION? HOW EVERYONE IS FEELING ABOUT THE MAIN INITIATIVES?</h2>
                     <hr class="divider my-4" />
                 </div>
                 <div class="col-lg-8 align-self-baseline">
                     <h3 class="text-white font-weight-light mb-5">Maoni dashboard makes it simple to track what teams
                         are working at a glance and to dig into the data, and get insights on how teams are performing
                         and feeling</h3>
-                    <a class="btn btn-primary btn-xl js-scroll-trigger" href="#product">Find Out More</a>
+                    <a class="btn btn-primary btn-xl js-scroll-trigger mr-4" href="#product">Find Out More</a>
+                    <a class="btn btn-primary btn-xl js-scroll-trigger ml-4" href="https://calendly.com/pedro-alves-maoni">Book a Demo</a>
                 </div>
             </div>
+
+            
         </div>
+        
     </header>
 
     <section class="page-section bg-primary" id="What">
@@ -11220,7 +11221,7 @@
             <div class="row h-100 align-items-center justify-content-center text-center">
                 <div class="col-lg-10 align-self-end">
                     <h4 class="text-white-50 font-weight-light ">We are not a digital surveillance system to monitor employee’s remote activities and productivity.</h4>
-                    <h4 class="text-white-50 font-weight-light ">Our solution anonymises the voice data, by not capturing the meeting's participants and not tagging speeches to individuals. </h4>
+                    <h4 class="text-white-50 font-weight-light ">Our solution anonymises voice data, by intentionally not capturing the meeting's participants, and treating the transcription as a monology.</h4>
                 </div>
             </div>
             <hr class="divider my-4" style="border-color: white;"/>
@@ -11399,6 +11400,7 @@
             d.getElementsByTagName("head")[0].appendChild(s);
         })();
     </script>
+
 </body>
 
 </html>
