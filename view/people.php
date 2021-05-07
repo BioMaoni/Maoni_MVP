@@ -1,9 +1,24 @@
 <div class="container-fluid ">
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">People & Culture</h1>
+        <h1 class="h3 mb-0 text-gray-800">People</h1>
         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
     </div>
+
+    <ul>
+        <li>
+            <h6 class="">
+                <p>People ‘topic’ positive trend (+11%) since January, occurrence of the word ‘people’ increase 28% (all-time high)</p>
+            </h6>
+        </li>
+        <li>
+            <h6 class="">
+                <p>We have been speaking less about Culture (from 31 to 18 occurrence) but with more positive sentiment (90% up)</p>
+            </h6>
+        </li>
+    </ul>
+
+    <br>
 
     <div class="row">
         <div class="col-sm col-md col-xl-6 mb-4">

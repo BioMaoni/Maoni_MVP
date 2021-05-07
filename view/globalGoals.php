@@ -5,6 +5,21 @@
         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
     </div>
 
+    <ul>
+        <li>
+            <h6 class="">
+                <p>We are talking about the numbers but not talking about our sentiment (positive or negative) about our KPIs</p>
+            </h6>
+            <ul>
+                <li>
+                    <h6 class="">0.04 very neutral</h6>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <br>
+
     <div class="row">
         <div class="col-sm col-md col-xl-6">
             <div class="card border-left-warning shadow py-2">

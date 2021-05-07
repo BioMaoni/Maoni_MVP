@@ -1,9 +1,19 @@
 <div class="container-fluid ">
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Data & Tech</h1>
+        <h1 class="h3 mb-0 text-gray-800">Technology</h1>
         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
     </div>
+
+    <ul>
+        <li>
+            <h6 class="">
+                <p>The downward trend with regards to data (-44%) and automation (-63%) were two of the biggest drops from Feb. to March (lowest average of the year)</p>
+            </h6>
+        </li>
+    </ul>
+
+    <br>
 
     <div class="row">
 

@@ -125,7 +125,7 @@ require_once '../controller/user/loggedIn.php';
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="portal.php?par=trending" onclick="header()">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="portal.php?par=our" onclick="header()">
                 <div class="sidebar-brand-icon">
                     <img src="../bootstrap/img/logoMaoni.png" style="height: 45px; width: 45px" alt="Logo" />
                 </div>
@@ -137,9 +137,10 @@ require_once '../controller/user/loggedIn.php';
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="portal.php?par=trending" onclick="">
+                <a class="nav-link" href="portal.php?par=our">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Trending Keywords</span></a>
+                    <span>FAQ - Terminology</span>
+                </a>
             </li>
 
             <!-- Divider -->
@@ -147,7 +148,7 @@ require_once '../controller/user/loggedIn.php';
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Meetings
+                Types of Meetings
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
@@ -166,13 +167,13 @@ require_once '../controller/user/loggedIn.php';
             <li class="nav-item">
                 <a class="nav-link collapsed" style="padding: .5rem 1rem;" href="#" data-toggle="collapse" data-target="#cross_topics" aria-expanded="true" aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
-                    <span>Cross-Functional</span>
+                    <span>Weekly All-Hands Meeting</span>
                 </a>
                 <div id="cross_topics" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="collapse-inner" style="padding: 0rem;">
-                        <h1 class="collapse-header" style="padding: .5rem 0rem; font-size: .65rem; color: white;">Weekly Shake</h1>
+                        <a class="nav-link w-100 h-100" style="padding: .5rem 1rem;" href="portal.php?par=trending" onclick="">Trending Keywords</a>
                         <a class="nav-link w-100 h-100" style="padding: .5rem 1rem;" href="portal.php?par=historical">Historical Sentiment</a>
-                        <a class="nav-link w-100 h-100" style="padding: .5rem 1rem;" href="portal.php?par=teams">Teams - Sentiment</a>
+                        <a class="nav-link w-100 h-100" style="padding: .5rem 1rem;" href="portal.php?par=teams">Teams Sentiment</a>
                         <!-- estudar data-parent -->
                         <a class="nav-link collapsed w-100 h-100" style="padding: .5rem 1rem;" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
                             <i class="fas fa-fw fa-folder"></i>
@@ -201,26 +202,6 @@ require_once '../controller/user/loggedIn.php';
                         </div>
                     </div>
                 </div>
-            </li>
-
-            <hr class="sidebar-divider">
-
-            <div class="sidebar-heading">
-                Others
-            </div>
-
-            <li class="nav-item">
-                <a class="nav-link" style="padding: .5rem 1rem;" href="portal.php?par=insights">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Insights</span>
-                </a>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link" style="padding: .5rem 1rem;" href="portal.php?par=our">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Our Methodology</span>
-                </a>
             </li>
 
             <!--
@@ -301,13 +282,13 @@ require_once '../controller/user/loggedIn.php';
                         </li>
 
                         <!-- Nav Item - Alerts -->
-                        <li class="nav-item dropdown no-arrow mx-1">
+                        <!-- <li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-bell fa-fw"></i>
-                                <!-- Counter - Alerts -->
+                                Counter - Alerts 
                                 <span class="badge badge-danger badge-counter">3+</span>
                             </a>
-                            <!-- Dropdown - Alerts -->
+                             Dropdown - Alerts 
                             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
                                 <h6 class="dropdown-header">
                                     Alerts Center
@@ -346,17 +327,17 @@ require_once '../controller/user/loggedIn.php';
                                     </div>
                                 </a>
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-                            </div>
-                        </li>
+                            </div> 
+                        </li> -->
 
                         <!-- Nav Item - Messages -->
-                        <li class="nav-item dropdown no-arrow mx-1">
+                        <!--  <li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-envelope fa-fw"></i>
-                                <!-- Counter - Messages -->
+                               Counter - Messages 
                                 <span class="badge badge-danger badge-counter">7</span>
                             </a>
-                            <!-- Dropdown - Messages -->
+                            Dropdown - Messages 
                             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
                                 <h6 class="dropdown-header">
                                     Message Center
@@ -406,8 +387,8 @@ require_once '../controller/user/loggedIn.php';
                                     </div>
                                 </a>
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
-                            </div>
-                        </li>
+                            </div> 
+                        </li> -->
 
                         <div class="topbar-divider d-none d-sm-block"></div>
 
@@ -421,7 +402,7 @@ require_once '../controller/user/loggedIn.php';
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
+                                <!-- <a class="dropdown-item" href="#">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a>
@@ -433,7 +414,7 @@ require_once '../controller/user/loggedIn.php';
                                     <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Activity Log
                                 </a>
-                                <div class="dropdown-divider"></div>
+                                <div class="dropdown-divider"></div> -->
                                 <a onclick="logout()" class="dropdown-item" data-toggle="modal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
@@ -483,15 +464,15 @@ require_once '../controller/user/loggedIn.php';
                             require_once "productOffering.php";
                         } else if ($_GET["par"] == "remote") {
                             require_once "remotePlaybook.php";
-                        } else if ($_GET["par"] == "our") {
-                            require_once "ourMethodology.php";
+                        } else if ($_GET["par"] == "trending") {
+                            require_once "trendingTopics.php";
                         } else if ($_GET["par"] == "insights") {
                             require_once "insights.php";
                         } else {
-                            require_once "trendingTopics.php";
+                            require_once "OurMethodology.php";
                         }
                     } else {
-                        require_once "trendingTopics.php";
+                        require_once "OurMethodology.php";
                     } ?>
 
                 </div>

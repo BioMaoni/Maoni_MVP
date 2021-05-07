@@ -5,6 +5,21 @@
         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
     </div>
 
+    <ul>
+        <li>
+            <h6 class="">
+                <p>Sales (-16%) and People Team (-36%) sentiment downward trend</p>
+            </h6>
+        </li>
+        <li>
+            <h6 class="">
+                <p>Tech and Customer Relations with more than 65% improve in sentiment</p>
+            </h6>
+        </li>
+    </ul>
+    
+    <br>
+
     <div class="row">
         <div class="col-sm col-md col-xl-6">
             <div class="card shadow mb-4">

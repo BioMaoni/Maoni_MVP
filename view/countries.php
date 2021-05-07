@@ -5,6 +5,31 @@
         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
     </div>
 
+    <ul>
+        <li>
+            <h6 class="">
+                <p>Average sentiment for Iceland in 2021 is half of the average of other key markets (Port.; UK; Hung.), respectively 0.08 vs. 0.16. Iceland sentiment trend is improving, but still low</p>
+            </h6>
+        </li>
+        <li>
+            <h6 class="">
+                <p>UK sentiment trend following a downward trajectory</p>
+            </h6>
+        </li>
+        <li>
+            <h6 class="">
+                <p>Portugal sentiment consistently around 0.2</p>
+            </h6>
+        </li>
+        <li>
+            <h6 class="">
+                <p>Hungary positive sentiment trending (doubling from Feb. to Mar.)</p>
+            </h6>
+        </li>
+    </ul>
+
+    <br>
+
     <div class="row">
         <div class="col-sm col-md col-xl-6 mb-4">
             <div class="card border-left-warning shadow py-2">
