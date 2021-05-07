@@ -13,19 +13,19 @@
     <br>
     <h5 class="font-weight-bold">What is a Tagged Topic?</h5>
     <h6 class="">
-        <p>These are the words that you, the user, will specifically tell our code to look for in the meetings. Tagging words allows you to analyze sentiment, subjectivity, frequency and a lot more information -- just like the code already does with the words from key topics.</p>
+        <p>These are the words that you, the user, will specifically tell our code to look for in the meetings. Tagging words allows you to analyse sentiment, subjectivity, frequency, and a lot more information -- just like the code already does with the words from key topics.</p>
     </h6>
     <br>
     <h5 class="font-weight-bold">What are Trending Keywords?</h5>
     <h6 class="">
-        <p>These are the most recurrent words mentioned in your meetings, and are determined using their number of occurrences in the meetings from any specified period.</p>
+        <p>These are the most recurrent words mentioned in your meetings and are determined using their number of occurrences in the meetings from any specified period.</p>
     </h6>
     <br>
     <h3 class="font-weight-bold">2) <u>ANALYSIS:</u></h3>
     <br>
     <h5 class="font-weight-bold">What is Sentiment Analysis important to you?</h5>
     <h6 class="">
-        <p>Analysis is a process of identifying data (in this case, words, sentences, or whole texts) as positive, negative or neutral using pre-established parameters. In our code, the sentiment scale varies can range from -1 to 1, with the low end of the scale indicating negative responses and the high end positive responses.</p>
+        <p>Sentiment Analysis is a process of identifying data (words, sentences, or whole texts) as positive, negative or neutral using pre-established parameters. The sentiment scale varies can range from -1 to 1, with the low end of the scale indicating negative responses and the high end positive responses.</p>
     </h6>
     <br>
     <h5 class="font-weight-bold">Why is Sentiment Analysis important?</h5>
