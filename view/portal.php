@@ -167,7 +167,7 @@ require_once '../controller/user/loggedIn.php';
             <li class="nav-item">
                 <a class="nav-link collapsed" style="padding: .5rem 1rem;" href="#" data-toggle="collapse" data-target="#cross_topics" aria-expanded="true" aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
-                    <span>Weekly All-Hands Meeting</span>
+                    <span>Weekly All-Hands</span>
                 </a>
                 <div id="cross_topics" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="collapse-inner" style="padding: 0rem;">
