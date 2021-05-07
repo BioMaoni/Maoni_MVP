@@ -469,10 +469,10 @@ require_once '../controller/user/loggedIn.php';
                         } else if ($_GET["par"] == "insights") {
                             require_once "insights.php";
                         } else {
-                            require_once "OurMethodology.php";
+                            require_once "ourMethodology.php";
                         }
                     } else {
-                        require_once "OurMethodology.php";
+                        require_once "ourMethodology.php";
                     } ?>
 
                 </div>
