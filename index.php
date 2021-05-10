@@ -11220,7 +11220,7 @@
             <hr class="divider my-4" style="border-color: white;"/>
             <div class="row h-100 align-items-center justify-content-center text-center">
                 <div class="col-lg-10 align-self-end">
-                    <h4 class="text-white-50 font-weight-light ">We are not a digital surveillance system to monitor employee’s remote activities and productivity.</h4>
+                    <h4 class="text-white-50 font-weight-light ">We are not a digital surveillance system to monitor employee’s remote activities.</h4>
                     <h4 class="text-white-50 font-weight-light ">Our solution anonymises voice data, by intentionally not capturing the meeting's participants, and treating the transcription as a monology.</h4>
                 </div>
             </div>
