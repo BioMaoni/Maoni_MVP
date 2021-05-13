@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<?php 
+require_once 'vendor/autoload.php'; 
+require_once 'Maoni_Api/controller/token/config.php'; 
+$url = "https://zoom.us/oauth/authorize?response_type=code&client_id=".CLIENT_ID."&redirect_uri=".REDIRECT_URI; 
+?>
 <html lang="en">
 
 <head>

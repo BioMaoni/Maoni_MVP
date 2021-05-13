@@ -16,11 +16,11 @@ $stmt = $user->read();
 $num = $stmt->rowCount();
 // check if more than 0 record found
 if($num>0){
- 
     $users_arr=array();
     $users_arr["users"]=array();
  
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+        var_dump($row);
         extract($row);
         $user_item=array(
             "id" => $ID,
