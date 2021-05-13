@@ -3,10 +3,10 @@ class Database
 {
 
     // specify your own database credentials
-    private $host = "maoniserver.mysql.database.azure.com";
-    private $db_name = "maoni";
-    private $username = "maoniadm";
-    private $password = "maoni123*";
+    private $host = "localhost";
+    private $db_name = "maoni"; // "maonic05_maoni" REDE // "maoni" LOCAL
+    private $username = "root"; //"maonic05_maoniuser" REDE //"root" LOCAL
+    private $password = ""; //"maoniuser" REDE// "" LOCAL
     public $conn;
 
     // get the database connection

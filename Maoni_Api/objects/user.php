@@ -51,6 +51,7 @@ class User
     {
         $stmt = $this->conn->prepare("SELECT * FROM user ORDER BY id DESC");
         $stmt->execute();
+        var_dump($stmt);
         return $stmt;
     }
 

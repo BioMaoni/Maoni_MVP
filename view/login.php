@@ -38,7 +38,7 @@
                     <div class="mx-3" style="color: #fff; font-size: 1rem; font-weight: 800;">MAONI</div>
                 </div>
                 <div class="d-flex justify-content-center form_container">
-                    <form>
+                    <form action="../Maoni_Api/controller/user/login_user.php" method="post">
                         <div class="input-group mb-3">
                             <div class="input-group-append">
                                 <span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -58,14 +58,14 @@
                             </div>
                         </div>
                         <div class="d-flex justify-content-center mt-3 login_container">
-                            <input type="submit" value="Login" style="color: #fff;" name="" onclick="Login()" class="btn btn-lg btn-primary shadow-sm">
+                            <input type="submit" value="Login" style="color: #fff;" name="" class="btn btn-lg btn-primary shadow-sm">
                         </div>
                     </form>
                 </div>
 
                 <div>
                     <div class="d-flex justify-content-center links" style="color: #fff;">
-                        Don't have an account? <a style="color: #0E1B51;" href="#" class="ml-2">Sign Up</a>
+                        Don't have an account? <a style="color: #0E1B51;" href="login.php" class="ml-2">Sign Up</a>
                     </div>
                     <div class="d-flex justify-content-center links">
                         <a style="color: #0E1B51;" href="#">Forgot your password?</a>
@@ -74,32 +74,205 @@
             </div>
         </div>
     </div>
-
-    <script>
-        function Login() {
-            $email=urlencode(('#email').val());
-            $.ajax({
-                type: "POST",
-                url: '../../Maoni_Api/controller/login.php',
-                dataType: 'json',
-                data: {
-                    email: $email,
-                    password: $("#password").val()
-                },
-                error: function(result) {
-                    alert(result.responseText);
-                },
-                success: function(result) {
-                    if (result['status'] == true) {
-                        alert("Successfully!");
-                        window.location.href = '/view/';
-                    } else {
-                        alert(result['message']);
-                    }
-                }
-            });
-        }
-    </script>
 </body>
 
 </html>
+
+<!--  left column 
+<div class="col-md-12">
+  <!-- general form elements 
+  <div class="box box-primary">
+    <div class="box-header with-border">
+      <h3 class="box-title">Add Doctor</h3>
+    </div>
+    <!-- /.box-header -->
+    <!-- form start 
+    <form role="form">
+      <div class="box-body">
+        <div class="form-group">
+          <label for="exampleInputName1">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter Name">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Password">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputName1">Phone</label>
+          <input type="text" class="form-control" id="phone" placeholder="Enter Phone">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputName1">Gender</label>
+            <div class="radio">
+                <label>
+                <input type="radio" name="gender" id="optionsRadios1" value="0" checked="">
+                Male
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                <input type="radio" name="gender" id="optionsRadios2" value="1">
+                Female
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputName1">Specialist</label>
+          <input type="text" class="form-control" id="specialist" placeholder="Enter Specialization">
+        </div>
+      </div>
+      <!-- /.box-body 
+      <div class="box-footer">
+        <input type="button" class="btn btn-primary" onClick="AddDoctor()" value="Submit"></input>
+      </div>
+    </form>
+  </div>
+  <!-- /.box 
+</div>
+</div>';
+include('../master.php');
+?>
+
+<script>
+//exemplo de create
+function AddDoctor() {
+
+$.ajax({
+type: "POST",
+url: '../api/doctor/create.php',
+dataType: 'json',
+data: {
+name: $("#name").val(),
+email: $("#email").val(),
+password: $("#password").val(),
+phone: $("#phone").val(),
+gender: $("input[name='gender']:checked").val(),
+specialist: $("#specialist").val()
+},
+error: function(result) {
+alert(result.responseText);
+},
+success: function(result) {
+if (result['status'] == true) {
+    alert("Successfully Added New Doctor!");
+    window.location.href = '/medibed/doctor';
+} else {
+    alert(result['message']);
+}
+}
+});
+}
+</script>
+
+
+                <!-- left column 
+                <div class="col-md-12">
+                  <!-- general form elements 
+                  <div class="box box-primary">
+                    <div class="box-header with-border">
+                      <h3 class="box-title">Update Doctor</h3>
+                    </div>
+                    <!-- /.box-header 
+                    <!-- form start 
+                    <form role="form">
+                      <div class="box-body">
+                        <div class="form-group">
+                          <label for="exampleInputName1">Name</label>
+                          <input type="text" class="form-control" id="name" placeholder="Enter Name">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="email" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputName1">Phone</label>
+                          <input type="text" class="form-control" id="phone" placeholder="Enter Phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputName1">Gender</label>
+                            <div class="radio">
+                                <label>
+                                <input type="radio" name="gender" id="gender0" value="0" checked="">
+                                Male
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                <input type="radio" name="gender" id="gender1" value="1">
+                                Female
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputName1">Specialist</label>
+                          <input type="text" class="form-control" id="specialist" placeholder="Enter Specialization">
+                        </div>
+                      </div>
+                      <!-- /.box-body 
+                      <div class="box-footer">
+                        <input type="button" class="btn btn-primary" onClick="UpdateDoctor()" value="Update"></input>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- /.box 
+                </div>
+              </div>';
+
+include('../master.php');
+?>
+<script>
+    $(document).ready(function() {
+        $.ajax({
+            type: "GET",
+            url: "../api/doctor/read_single.php?id=<?php echo $_GET['id']; ?>",
+            dataType: 'json',
+            success: function(data) {
+                $('#name').val(data['name']);
+                $('#email').val(data['email']);
+                $('#password').val(data['password']);
+                $('#phone').val(data['phone']);
+                $('#gender' + data['gender']).prop("checked", true);
+                $('#specialist').val(data['specialist']);
+            },
+            error: function(result) {
+                console.log(result);
+            },
+        });
+    });
+    //Exemplo de update
+    function UpdateDoctor() {
+        $.ajax({
+            type: "POST",
+            url: '../api/doctor/update.php',
+            dataType: 'json',
+            data: {
+                id: <?php echo $_GET['id']; ?>,
+                name: $("#name").val(),
+                email: $("#email").val(),
+                password: $("#password").val(),
+                phone: $("#phone").val(),
+                gender: $("input[name='gender']:checked").val(),
+                specialist: $("#specialist").val()
+            },
+            error: function(result) {
+                alert(result.responseText);
+            },
+            success: function(result) {
+                if (result['status'] == true) {
+                    alert("Successfully Updated Doctor!");
+                    window.location.href = '/medibed/doctor';
+                } else {
+                    alert(result['message']);
+                }
+            }
+        });
+    }
+</script>
